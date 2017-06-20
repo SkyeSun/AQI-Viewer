@@ -1,0 +1,30 @@
+#aqi {
+    z-index: 100;
+    position: fixed;
+    width: 300px;
+    height: 100px;
+    display: inline-block;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#aqi h1 {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#aqi .red {
+    color: red;
+}
+#aqi .green {
+    color: green;
+}
+#aqi .gray {
+    color: white;
+}
