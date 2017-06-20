@@ -11,7 +11,7 @@
 #aqi h1 {
   z-index: 100;
   position: absolute;
-  width: 100%;
+  width: 25rem;
   text-align: center;
   color: #FFFFFF;
   background-color: rgba(0,0,0,0.7);
@@ -19,12 +19,21 @@
   padding: 20px;
 }
 
-#aqi .red {
-    color: red;
+#aqi .excellent {
+    color: #02E300;
 }
-#aqi .green {
-    color: green;
+#aqi .good {
+    color: #FFFF00;
 }
-#aqi .gray {
-    color: white;
+#aqi .slightly {
+    color: #FF7E00;
+}
+#aqi .medium {
+    color: #FE0000;
+}
+#aqi .heavy {
+    color: #98004B;
+}
+#aqi .serious {
+    color: #7E0123;
 }

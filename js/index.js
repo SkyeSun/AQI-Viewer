@@ -41,17 +41,31 @@ var clickEventListener = map.on('click', function(e) {
 var dealAQIData = function(r) {
     var aqi = r.data.aqi
     console.log('aqi: ', aqi)
-    var color = ''
-    if(aqi < 100) {
-        color = 'green'
-    } else if(aqi > 100 && aqi < 250) {
-        color = 'gray'
+    var color = '',
+        des = ''
+    if(aqi <= 50) {
+        color = 'excellent'
+        des = '优秀'
+    } else if(aqi > 50 && aqi <= 100) {
+        color = 'good'
+        des = '良好'
+    } else if(aqi > 100 && aqi <= 150) {
+        color = 'slightly'
+        des = '轻度污染'
+    } else if(aqi > 150 && aqi <= 200) {
+        color = 'medium'
+        des = '中度污染'
+    } else if(aqi > 200 && aqi <= 300) {
+        color = 'heavy'
+        des = '重度污染'
     } else {
-        color = 'red'
+        color = 'serious'
+        des = '严重污染'
     }
 
-    document.getElementById("aqi-h1").innerHTML = ` 此处的AQI指数是： <span id="aqi-value">${aqi}</span>`
+    document.getElementById("aqi-h1").innerHTML = ` 此处当前的AQI指数为： </br><span id="aqi-value">${aqi}</span></br><span id="aqi-des">${des}</span>`
     document.getElementById("aqi-value").classList.add(color)
+    document.getElementById("aqi-des").classList.add(color)
 
 }
 
