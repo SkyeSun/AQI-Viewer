@@ -63,9 +63,8 @@ var dealAQIData = function(r) {
         des = '严重污染'
     }
 
-    document.getElementById("aqi-h1").innerHTML = ` 此处当前的AQI指数为： </br><span id="aqi-value">${aqi}</span></br><span id="aqi-des">${des}</span>`
-    document.getElementById("aqi-value").classList.add(color)
-    document.getElementById("aqi-des").classList.add(color)
+    document.getElementById("aqi").innerHTML = ` 此处当前的AQI指数为： </br><span id="aqi-con"><span id="aqi-value">${aqi}</span></br><span id="aqi-des">${des}</span></span>`
+    document.getElementById("aqi-con").classList.add(color)
 
 }
 

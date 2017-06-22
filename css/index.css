@@ -1,22 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 #aqi {
     z-index: 100;
-    position: fixed;
-    width: 300px;
-    height: 100px;
     display: inline-block;
-    bottom: 100px;
+    width: 16rem;
+    height: auto;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 20px;
+    padding: 20px;
+    position: absolute;
+    bottom: 3rem;
     left: 50%;
     transform: translateX(-50%);
 }
-#aqi h1 {
-  z-index: 100;
-  position: absolute;
-  width: 25rem;
-  text-align: center;
-  color: #FFFFFF;
-  background-color: rgba(0,0,0,0.7);
-  border-radius: 20px;
-  padding: 20px;
+
+#aqi-con {
+    font-size: x-large;
+    font-weight: bold;
 }
 
 #aqi .excellent {
